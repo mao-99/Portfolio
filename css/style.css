@@ -309,7 +309,7 @@ header{
   margin-bottom: 4em;
 }
 
-@media (min-width: 800px){
+@media (min-width: 1000px){
   .services{
     display: flex;
     max-width: 1000px;
@@ -329,7 +329,7 @@ header{
   margin: 0 auto;
 }
 
-@media (min-width:600px){
+@media (min-width:1000px){
   .about_me{
     display: block;
     grid-template-columns: 1fr 200px;
