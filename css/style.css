@@ -331,7 +331,7 @@ header{
 
 @media (min-width:600px){
   .about_me{
-    display: grid;
+    display: block;
     grid-template-columns: 1fr 200px;
     grid-template-areas:
       "title img"
@@ -342,18 +342,24 @@ header{
 
   .section__title__about{
     grid-area: title;
+    position: relative;
+    text-align: center;
   }
 
   .section__subtitle__about{
-    grid-column: 1 / -1;
+    align-self: start;
+    grid-column: -1 / 1;
     grid-row: 2;
+    text-align: right;
     position: relative;
-    left: -1em;
-    width: calc(100% + 2em);
-    padding: 1em;
-    padding-right: calc(200px + 4em);
+    left: -1.5em;
+    width: calc(100% + 1.5em);
   }
-
+  .about__me__body{
+    margin-bottom: 2em;
+    text-align: center;
+    margin-top: 4em;
+  }
 }
 
 /* My Work */
